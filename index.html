@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoWatch</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>
+          <a href="/" class="underline-animation">Crypto<span>Watch</span></a>
+        </h1>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero-main">
+        <h1>
+          Watch your cryptos <span>Live</span>
+        </h1>
+        <div class="hero-main-links">
+          <a target="_blank" href="https://learncrypto.com/"><button class="button" style="vertical-align: middle">
+            <span>Learn about</span>
+          </button>
+        </a>
+        </div>
+      </div>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="main">
+      <h1 id="h1-top">Top 10 Cryptocurrencies Today</h1>
+      <div class="cryptos"></div>
+
+      <div class="search">
+        <div class="input-group">
+          <input
+            id="input-search"
+            required=""
+            type="text"
+            name="text"
+            autocomplete="off"
+            class="input"
+          />
+          <label class="user-label">Search..</label>
+        </div>
+        <div class="cryptos cryptos-search"></div>
+      </div>
+    </div>
+
+    <div class="sfocatura"></div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <p class="footer-text">Live cryptocurrency prices</p>
+          <p class="footer-subtext">Updated in real time</p>
+        </div>
+        <p>Made by <span class="io">Angelo Giuliano</span></p>
+        <div class="footer-social">
+          <a target="blank" href="https://twitter.com/home" class="social-link"><img src="/imgs/twi.png" alt=""></a>
+          <a target="blank" href="https://www.instagram.com/" class="social-link"><img src="/imgs/ig.png" alt=""></a>
+          <a target="blank" href="https://www.linkedin.com/feed/" class="social-link"><img src="/imgs/linkedin.png" alt=""></i></a>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
